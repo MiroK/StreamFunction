@@ -63,8 +63,6 @@ V = VectorFunctionSpace(mesh, 'CG', 1)
 
 n = Normal(mesh); n = project(n, V)
 
-plot(inner(n, n), interactive=True)
-
 #n = FacetNormal(mesh) #gmres jacobi
 #------------------------------------------------------------------------------
 u_ = interpolate(Expression(u0), V)
